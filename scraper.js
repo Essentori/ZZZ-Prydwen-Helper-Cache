@@ -10,7 +10,12 @@ async function runScraper() {
     
     const browser = await puppeteer.launch({
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: [
+            '--no-sandbox', 
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-web-security'
+        ]
     });
 
     try {
@@ -21,12 +26,12 @@ async function runScraper() {
 
         console.log("Navigating to Prydwen characters page...");
         await page.goto('https://www.prydwen.gg/zenless/characters', { 
-            waitUntil: 'networkidle2',
+            waitUntil: 'domcontentloaded', 
             timeout: 60000 
         });
 
-        console.log("Waiting for Cloudflare JavaScript challenge to resolve...");
-        await new Promise(resolve => setTimeout(resolve, 10000));
+        console.log("DOM content loaded. Waiting 15 seconds for Cloudflare checks and script execution...");
+        await new Promise(resolve => setTimeout(resolve, 15000));
 
         const htmlContent = await page.content();
 
@@ -62,7 +67,6 @@ async function runScraper() {
         }
         
         let rawArrayStr = htmlContent.substring(startIdx, endIdx + 1);
-        
         rawArrayStr = rawArrayStr.replace(/\\"/g, '"');
         
         const rawCharacters = JSON.parse(rawArrayStr);
