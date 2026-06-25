@@ -310,7 +310,7 @@ async function runScraper() {
     } catch (error) {
         console.error("Scraper execution failed:", error.message);
         process.exit(1);
-    } final {
+    } finally {
         await browser.close();
     }
 }
