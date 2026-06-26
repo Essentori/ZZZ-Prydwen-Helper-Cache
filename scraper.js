@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Script version for database migration control
-const SCRAPER_VERSION = "1.2"; 
+const SCRAPER_VERSION = "1.3"; 
 
 puppeteer.use(StealthPlugin());
 
@@ -41,6 +41,7 @@ function formatToPrydwenDate(dateInput) {
     return `${d.getDate()}/${months[d.getMonth()]}/${d.getFullYear()}`;
 }
 
+// Extractor for Arrays
 function extractJsonArray(html, keyName) {
     const regex = new RegExp(`\\\\"${keyName}\\\\"\\s*:\\s*\\[|["']${keyName}["']\\s*:\\s*\\[`);
     const match = html.match(regex);
@@ -76,6 +77,42 @@ function extractJsonArray(html, keyName) {
     try { return JSON.parse(rawStr); } catch (e) { return null; }
 }
 
+// Extractor for Objects
+function extractJsonObject(html, keyName) {
+    const regex = new RegExp(`\\\\*"${keyName}\\\\*"\\s*:\\s*\\\\*\\{|["']${keyName}["']\\s*:\\s*\\{`);
+    const match = html.match(regex);
+    if (!match) return null;
+    
+    const startIdx = match.index + match[0].length - 1;
+    if (html[startIdx] !== '{') return null;
+    
+    let bracketCount = 0;
+    let endIdx = -1;
+    
+    for (let i = startIdx; i < html.length; i++) {
+        if (html[i] === '{') bracketCount++;
+        else if (html[i] === '}') {
+            bracketCount--;
+            if (bracketCount === 0) {
+                endIdx = i;
+                break;
+            }
+        }
+    }
+    
+    if (endIdx === -1) return null;
+    let rawStr = html.substring(startIdx, endIdx + 1);
+    
+    for (let iter = 0; iter < 5; iter++) {
+        try {
+            return JSON.parse(rawStr);
+        } catch (e) {
+            rawStr = rawStr.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+        }
+    }
+    try { return JSON.parse(rawStr); } catch (e) { return null; }
+}
+
 function extractFromPayload(stream, html, keyName) {
     if (stream) {
         const res = extractJsonArray(stream, keyName);
@@ -84,16 +121,12 @@ function extractFromPayload(stream, html, keyName) {
     return extractJsonArray(html, keyName);
 }
 
-function normalizeExtractedArray(arr) {
-    if (!Array.isArray(arr)) return [];
-    return arr.map(item => {
-        if (typeof item === 'string') {
-            try {
-                if (item.trim().startsWith('{')) return JSON.parse(item);
-            } catch (e) {}
-        }
-        return item;
-    });
+function extractObjFromPayload(stream, html, keyName) {
+    if (stream) {
+        const res = extractJsonObject(stream, keyName);
+        if (res) return res;
+    }
+    return extractJsonObject(html, keyName);
 }
 
 function extractUpdateDate(html, stream) {
@@ -238,55 +271,73 @@ async function runScraper() {
 
                 console.log(`[Update] Extracting deep payload data for ${char.Name}...`);
 
-                // W-Engines
-                const rawEngines = normalizeExtractedArray(extractFromPayload(detailStream, detailHtml, "wEngines") || []);
-                const bestWEngines = rawEngines.map(e => {
-                    if (!e) return null;
-                    const nested = e.wEngine || e.engine || e;
-                    const name = nested.name || e.title || "Unknown Engine";
-                    let rating = e.value || e.rating || "100";
-                    rating = String(rating).replace('%', '').trim() + "%";
-                    return { Name: name, Rating: rating };
-                }).filter(Boolean);
+                // 1. W-Engines (engineBuilds)
+                const rawEngines = extractFromPayload(detailStream, detailHtml, "engineBuilds") || [];
+                const bestWEngines = rawEngines.map(e => ({
+                    Name: e.Engine || "Unknown Engine",
+                    Rating: String(e.Percentage_top || e.Percentage_bottom || "100%").replace('%', '').trim() + "%"
+                }));
 
-                // Drive Sets
-                const rawSets = normalizeExtractedArray(extractFromPayload(detailStream, detailHtml, "driveSets") || extractFromPayload(detailStream, detailHtml, "diskSets") || []);
-                const bestDiskSets = rawSets.map(s => {
-                    if (!s) return null;
-                    const name = s.name || (s.items && s.items.map(i => i.name).join(' + ')) || "Unknown Set";
-                    let rating = s.value || s.rating || "100";
-                    rating = String(rating).replace('%', '').trim() + "%";
-                    return { Name: name, Rating: rating };
-                }).filter(Boolean);
+                // 2. Drive Sets (diskBuilds)
+                const rawSets = extractFromPayload(detailStream, detailHtml, "diskBuilds") || [];
+                const bestDiskSets = rawSets.map(s => ({
+                    Name: s.Set || "Unknown Set",
+                    Rating: String(s.Percentage || "100%").replace('%', '').trim() + "%"
+                }));
 
-                // Stats Priority
-                const rawStats = normalizeExtractedArray(extractFromPayload(detailStream, detailHtml, "statsPriority") || []);
-                const mainStats = rawStats
-                    .filter(s => s && (s.slot === 4 || s.slot === 5 || s.slot === 6 || s.slot === "4" || s.slot === "5" || s.slot === "6"))
-                    .map(s => {
-                        let statsArr = [];
-                        if (Array.isArray(s.options)) {
-                            statsArr = s.options.map(opt => opt && opt.stat ? String(opt.stat) : null).filter(Boolean);
-                        } else if (Array.isArray(s.stats)) {
-                            statsArr = s.stats.map(st => typeof st === 'object' ? (st.name || String(st)) : String(st));
-                        }
-                        return { Slot: String(s.slot), Stats: statsArr };
-                    });
-                // Recomended Stats
-                // --------
-                // Mindscapes
-                const rawCalc = normalizeExtractedArray(extractFromPayload(detailStream, detailHtml, "mindscapes") || []);
-                const calculation = rawCalc.map(c => {
-                    if (!c) return null;
-                    const name = c.name || c.label || "M?";
-                    let value = c.value || "100";
-                    value = String(value).replace('%', '').trim() + "%";
-                    return { Label: String(name), Value: value };
-                }).filter(Boolean);
+                // 3. Stats Priority & Substats (statBuilds)
+                const rawStats = extractFromPayload(detailStream, detailHtml, "statBuilds") || [];
+                let mainStats = [];
+                let subStats = [];
+                if (rawStats.length > 0) {
+                    const stats = rawStats[0];
+                    mainStats = [
+                        { Slot: "4", Stats: stats.Disk_4 ? stats.Disk_4.split('>').map(s => s.trim()) : [] },
+                        { Slot: "5", Stats: stats.Disk_5 ? stats.Disk_5.split('>').map(s => s.trim()) : [] },
+                        { Slot: "6", Stats: stats.Disk_6 ? stats.Disk_6.split('>').map(s => s.trim()) : [] }
+                    ];
+                    if (stats.Substats) {
+                        subStats = stats.Substats.split('>').map(s => s.trim());
+                    }
+                }
+
+                // 4. Endgame Stats & Calculations ("character" root object)
+                const characterObj = extractObjFromPayload(detailStream, detailHtml, "character") || {};
+                
+                let endgameStats = [];
+                if (characterObj.endgameStats) {
+                    const matches = characterObj.endgameStats.match(/<li>(.*?)<\/li>/g);
+                    if (matches) {
+                        endgameStats = matches.map(m => m.replace(/<\/?li>/g, '').replace(/<[^>]+>/g, '').trim());
+                    }
+                }
+
+                let calculation = [];
+                if (characterObj.data && characterObj.data.additional_ability) {
+                    const dpsObj = characterObj.data.additional_ability.dps_standard || 
+                                   (characterObj.data.additional_ability.damage_calc && characterObj.data.additional_ability.damage_calc.dps);
+                    if (dpsObj && dpsObj.damage) {
+                        const baseDmg = dpsObj.damage;
+                        const mindscapes = ['e1', 'e2', 'e3', 'e4', 'e5', 'e6'];
+                        calculation = mindscapes.map((m, idx) => {
+                            const mDmg = dpsObj[`damage_${m}`];
+                            if (mDmg) {
+                                return { Label: `M${idx + 1}`, Value: ((mDmg / baseDmg) * 100).toFixed(2) + "%" };
+                            }
+                            return null;
+                        }).filter(Boolean);
+                    }
+                }
 
                 const finalizedCharacterData = {
                     Meta: { Id: char.Id, Name: char.Name, LastUpdated: remoteLastUpdated },
-                    Build: { BestWEngines: bestWEngines, BestDiskSets: bestDiskSets, MainStats: mainStats, SubStats: [] },
+                    Build: { 
+                        BestWEngines: bestWEngines, 
+                        BestDiskSets: bestDiskSets, 
+                        MainStats: mainStats, 
+                        SubStats: subStats,
+                        EndgameStats: endgameStats
+                    },
                     Calculation: calculation
                 };
 
@@ -294,7 +345,6 @@ async function runScraper() {
                 console.log(`[Success] Saved localized cache for ${char.Name}`);
                 char.LastUpdated = remoteLastUpdated;
                 break;
-                
             } catch (charError) {
                 console.error(`[Error] Failed processing ${char.Name}:`, charError.message);
             }
