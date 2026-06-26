@@ -2,79 +2,97 @@
   "Meta": {
     "Id": "cmoxppmvm008loack5e07gp9a",
     "Name": "Pulchra",
-    "LastUpdated": "2026-06-25T12:36:30.110Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Blazing Laurel",
-        "Rating": "100%"
+        "Rating": "109.57%"
       },
       {
         "Name": "Box Cutter",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hellfire Gears",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Six Shooter",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Steam Oven",
-        "Rating": "100%"
+        "Rating": "99.77%"
       },
       {
-        "Name": "The Restrained",
-        "Rating": "100%"
+        "Name": "Hellfire Gears",
+        "Rating": "98.18%"
       },
       {
-        "Name": "The Simmering Pot",
-        "Rating": "100%"
+        "Name": "Box Cutter",
+        "Rating": "95.89%"
+      },
+      {
+        "Name": "Precious Fossilized Core",
+        "Rating": "95.89%"
       },
       {
         "Name": "[Vortex] Arrow",
-        "Rating": "100%"
+        "Rating": "95.16%"
+      },
+      {
+        "Name": "Six Shooter",
+        "Rating": "91.61%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
+        "Name": "King of the Summit",
+        "Rating": "1%"
       },
       {
-        "Name": "King of the Summit",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       },
       {
         "Name": "Proto Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shadow Harmony",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
         "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "4%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK% = Physical DMG%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Impact"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Profiency",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 1800 - 2200+ (Optional)",
+      "HP: 10000+",
+      "DEF: 850+",
+      "IMPACT: 169 - 189+ (Most Important Stat)",
+      "Option 1 (Anomaly teams):Anomaly Proficiency: 250 - 300+ (Optional)",
+      "Anomaly Mastery: 92+ (Optional)",
+      "Option 2 (Crit teams):CRIT RATE: 50 - 60%+ (for King of the Summit)",
+      "CRIT DMG: 100 - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }

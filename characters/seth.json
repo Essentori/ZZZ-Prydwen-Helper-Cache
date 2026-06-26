@@ -2,67 +2,79 @@
   "Meta": {
     "Id": "cmoxppmw9008toack31wrbnm7",
     "Name": "Seth",
-    "LastUpdated": "2026-06-25T12:36:57.352Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bunny Band",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hailstorm Shrine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Original Transmorpher",
-        "Rating": "100%"
-      },
-      {
         "Name": "Peacekeeper - Specialized",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Spring Embrace",
-        "Rating": "100%"
+        "Rating": "2%"
+      },
+      {
+        "Name": "Bunny Band",
+        "Rating": "3%"
+      },
+      {
+        "Name": "Original Transmorpher",
+        "Rating": "4%"
       }
     ],
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Proto Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shockstar Disco",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Name": "Proto Punk",
+        "Rating": "3%"
+      },
+      {
+        "Name": "Freedom Blues",
+        "Rating": "4%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "ATK%",
+          "= Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%",
+          "= Electric DMG%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen = Anomaly Mastery"
+        ]
+      }
+    ],
+    "SubStats": [
+      "ATK%",
+      "Anomaly Proficiency",
+      "ATK",
+      "PEN"
+    ],
+    "EndgameStats": [
+      "ATK: 2600 - 3200+ (Shield Caps at 3750 Initial ATK but this is hard to achieve)",
+      "HP: 11000+",
+      "DEF: 900+",
+      "Anomaly Proficiency: 200 - 300+ (Optional)"
+    ]
   },
   "Calculation": []
 }

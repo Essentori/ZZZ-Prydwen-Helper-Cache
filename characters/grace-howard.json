@@ -2,67 +2,77 @@
   "Meta": {
     "Id": "cmoxppmsv007noackhs7s3ffj",
     "Name": "Grace",
-    "LastUpdated": "2026-06-25T12:34:37.743Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Electro-Lip Gloss",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Fusion Compiler",
-        "Rating": "100%"
+        "Name": "Timeweaver",
+        "Rating": "102.47%"
       },
       {
         "Name": "Practiced Perfection",
-        "Rating": "100%"
+        "Rating": "101.72%"
       },
       {
-        "Name": "Rainforest Gourmet",
-        "Rating": "100%"
+        "Name": "Fusion Compiler",
+        "Rating": "100.00%"
       },
       {
-        "Name": "Timeweaver",
-        "Rating": "100%"
+        "Name": "Electro-Lip Gloss",
+        "Rating": "99.66%"
       },
       {
         "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Rating": "99.31%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
+        "Name": "Thunder Metal",
+        "Rating": "100.00%"
       },
       {
         "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Thunder Metal",
-        "Rating": "100%"
+        "Rating": "99.95%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "PEN Ratio%",
+          "Electric DMG%",
+          "= ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Anomaly Mastery"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Proficiency",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2300 - 3000+",
+      "HP: 9500+",
+      "DEF: 800+",
+      "Anomaly Mastery: 150 - 190+",
+      "Anomaly Proficiency: 350 - 450+"
+    ]
   },
   "Calculation": []
 }

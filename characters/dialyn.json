@@ -2,79 +2,67 @@
   "Meta": {
     "Id": "cmoxppmsd007hoackt3kfmccm",
     "Name": "Dialyn",
-    "LastUpdated": "2026-06-25T12:34:19.823Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Box Cutter",
-        "Rating": "100%"
+        "Name": "Yesterday Calls",
+        "Rating": "1%"
       },
       {
         "Name": "Hellfire Gears",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Ice-Jade Teapot",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Spectral Gaze",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
         "Name": "Steam Oven",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Restrained",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Simmering Pot",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Yesterday Calls",
-        "Rating": "100%"
+        "Name": "Precious Fossilized Core",
+        "Rating": "4%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
         "Name": "King of the Summit",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "1%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%",
+          "= Physical DMG% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE (until 100%)",
+      "CRIT DMG = ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2400+",
+      "HP: 9500+",
+      "DEF: 800+",
+      "CRIT RATE: 80% - 100%",
+      "CRIT DMG: 100%+"
+    ]
   },
   "Calculation": []
 }

@@ -2,75 +2,75 @@
   "Meta": {
     "Id": "cmoxppmye009hoackxxcroi58",
     "Name": "Aria",
-    "LastUpdated": "2026-06-25T12:33:22.831Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Angel in the Shell",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Electro-Lip Gloss",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Flamemaker Shaker",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Flight of Fancy",
-        "Rating": "100%"
+        "Rating": "88.05%"
       },
       {
-        "Name": "Fusion Compiler",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Practiced Perfection",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Rainforest Gourmet",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Roaring Ride",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Timeweaver",
-        "Rating": "100%"
+        "Name": "Electro-Lip Gloss",
+        "Rating": "85.10%"
       },
       {
         "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Rating": "83.78%"
+      },
+      {
+        "Name": "Fusion Compiler",
+        "Rating": "83.16%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaotic Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
         "Name": "Phaethon's Melody",
-        "Rating": "100%"
+        "Rating": "102.17%"
       },
       {
         "Name": "Shining Aria",
-        "Rating": "100%"
+        "Rating": "100.00%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Ether DMG% = ATK%",
+          "PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Anomaly Mastery"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Proficiency",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2600 - 2900+",
+      "HP: 9500+",
+      "DEF: 750+",
+      "Anomaly Proficiency: 330 - 420+",
+      "Anomaly Mastery: 184 - 244"
+    ]
   },
   "Calculation": []
 }

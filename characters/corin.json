@@ -2,71 +2,78 @@
   "Meta": {
     "Id": "cmoxppms6007foack7isr13j2",
     "Name": "Corin",
-    "LastUpdated": "2026-06-25T12:34:14.472Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Cloudcleave Radiance",
-        "Rating": "100%"
-      },
-      {
         "Name": "Cordis Germina",
-        "Rating": "100%"
+        "Rating": "102.60%"
       },
       {
         "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Housekeeper",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Myriad Eclipse",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Starlight Engine",
-        "Rating": "100%"
+        "Rating": "100.28%"
       },
       {
         "Name": "Steel Cushion",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
-        "Name": "Zanshin Herb Case",
-        "Rating": "100%"
+        "Name": "Myriad Eclipse",
+        "Rating": "99.03%"
+      },
+      {
+        "Name": "Housekeeper",
+        "Rating": "87.16%"
+      },
+      {
+        "Name": "Starlight Engine",
+        "Rating": "84.51%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Fanged Metal",
-        "Rating": "100%"
+        "Name": "Puffer Electro",
+        "Rating": "1%"
       },
       {
         "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "PEN Ratio%",
+          "ATK% = Physical DMG%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2400 - 3000+",
+      "HP: 9000+",
+      "DEF: 800+",
+      "CRIT RATE: 70% - 80%+",
+      "CRIT DMG: 140% - 160%+"
+    ]
   },
   "Calculation": []
 }

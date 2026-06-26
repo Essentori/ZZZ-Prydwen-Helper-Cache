@@ -2,71 +2,81 @@
   "Meta": {
     "Id": "cmoxppmt1007poackfjsdw0kl",
     "Name": "Harumasa",
-    "LastUpdated": "2026-06-25T12:34:43.708Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Cordis Germina",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Severed Innocence",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Starlight Engine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Brimstone",
-        "Rating": "100%"
+        "Rating": "100.37%"
       },
       {
         "Name": "Zanshin Herb Case",
-        "Rating": "100%"
+        "Rating": "100.00%"
+      },
+      {
+        "Name": "The Brimstone",
+        "Rating": "98.82%"
+      },
+      {
+        "Name": "Heartstring Nocturne",
+        "Rating": "95.29%"
+      },
+      {
+        "Name": "Severed Innocence",
+        "Rating": "92.47%"
+      },
+      {
+        "Name": "Starlight Engine",
+        "Rating": "90.29%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Name": "Thunder Metal",
+        "Rating": "100.00%"
       },
       {
         "Name": "Shadow Harmony",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Thunder Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "93.63%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "ATK%",
+          "Crit DMG% = Crit Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%",
+          "Electric DMG%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Crit Rate (until 75% in stat screen)",
+      "ATK%",
+      "Crit DMG%",
+      "Flat PEN",
+      "Flat ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2600 - 3400+",
+      "HP: 10000+",
+      "DEF: 800+",
+      "CRIT RATE: 75% (Not more)",
+      "CRIT DMG: 150-190%"
+    ]
   },
   "Calculation": []
 }

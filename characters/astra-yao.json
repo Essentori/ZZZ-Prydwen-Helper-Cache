@@ -2,71 +2,64 @@
   "Meta": {
     "Id": "cmoxppmqz0073oackvt2co010",
     "Name": "Astra Yao",
-    "LastUpdated": "2026-06-25T12:33:28.964Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bashful Demon",
-        "Rating": "100%"
+        "Name": "Elegant Vanity",
+        "Rating": "1%"
       },
       {
-        "Name": "Elegant Vanity",
-        "Rating": "100%"
+        "Name": "Bashful Demon",
+        "Rating": "2%"
       },
       {
         "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Slice of Time",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
         "Name": "The Vault",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Unfettered Game Ball",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Weeping Cradle",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Weeping Gemini",
-        "Rating": "100%"
-      },
-      {
-        "Name": "[Reverb] Mark II",
-        "Rating": "100%"
-      },
-      {
-        "Name": "[Reverb] Mark III",
-        "Rating": "100%"
+        "Rating": "4%"
       }
     ],
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen = ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "ATK%",
+      "Flat ATK (Top Priorities Until Ability Cap)",
+      "Anomaly Proficiency",
+      "PEN"
+    ],
+    "EndgameStats": []
   },
   "Calculation": []
 }

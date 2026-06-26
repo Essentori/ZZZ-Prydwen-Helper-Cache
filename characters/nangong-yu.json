@@ -2,87 +2,75 @@
   "Meta": {
     "Id": "cmoxppmyq009loackdzo5vb1d",
     "Name": "Nangong Yu",
-    "LastUpdated": "2026-06-25T12:35:46.234Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Blazing Laurel",
-        "Rating": "100%"
+        "Name": "Neon Fantasies",
+        "Rating": "100.00%"
       },
       {
         "Name": "Hellfire Gears",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Ice-Jade Teapot",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Neon Fantasies",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Roaring Fur-nace",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Six Shooter",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steam Oven",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Restrained",
-        "Rating": "100%"
+        "Rating": "99.33%"
       },
       {
         "Name": "The Simmering Pot",
-        "Rating": "100%"
+        "Rating": "95.16%"
+      },
+      {
+        "Name": "Precious Fossilized Core",
+        "Rating": "101.89%"
+      },
+      {
+        "Name": "Roaring Fur-nace",
+        "Rating": "95.86%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaotic Metal",
-        "Rating": "100%"
+        "Name": "Phaethon's Melody",
+        "Rating": "1%"
       },
       {
         "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "King of the Summit",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shining Aria",
-        "Rating": "100%"
+        "Rating": "1%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Ether DMG% = ATK%",
+          "PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Anomaly Mastery"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Proficiency",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2,200 - 2,500+",
+      "HP: 9,500+",
+      "DEF: 750+",
+      "Anomaly Proficiency: 280 - 350+",
+      "Anomaly Mastery: 173 - 211"
+    ]
   },
   "Calculation": []
 }

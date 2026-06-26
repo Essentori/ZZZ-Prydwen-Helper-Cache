@@ -2,87 +2,85 @@
   "Meta": {
     "Id": "cmoxppmv6008foack5aedp10j",
     "Name": "Orphie & Magus",
-    "LastUpdated": "2026-06-25T12:36:07.429Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Bellicose Blaze",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Cannon Rotor",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Cordis Germina",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Drill Rig - Red Axis",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Gilded Blossom",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Myriad Eclipse",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Riot Suppressor Mark VI",
-        "Rating": "100%"
+        "Rating": "86.10%"
       },
       {
         "Name": "Severed Innocence",
-        "Rating": "100%"
+        "Rating": "84.56%"
       },
       {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
+        "Name": "Myriad Eclipse",
+        "Rating": "83.28%"
       },
       {
-        "Name": "The Brimstone",
-        "Rating": "100%"
+        "Name": "Cordis Germina",
+        "Rating": "81.37%"
+      },
+      {
+        "Name": "Gilded Blossom",
+        "Rating": "74.93.%"
+      },
+      {
+        "Name": "Marcato Desire",
+        "Rating": "73.33%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
         "Name": "Shadow Harmony",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT DMG% = CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Fire DMG%",
+          "= ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen",
+          "= ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT DMG = CRIT Rate",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2500 - 2700+",
+      "HP: 10000+",
+      "DEF: 900+",
+      "CRIT RATE: 90 - 100% (Including Orphie Passive &amp; Disc Drive Passive)",
+      "CRIT DMG: 120%+",
+      "Energy Regen: 80%+"
+    ]
   },
   "Calculation": []
 }

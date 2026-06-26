@@ -2,63 +2,78 @@
   "Meta": {
     "Id": "cmoxppmuu008boackvvzg31j2",
     "Name": "Nekomata",
-    "LastUpdated": "2026-06-25T12:35:51.577Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Cordis Germina",
-        "Rating": "100%"
+        "Rating": "106.63%"
       },
       {
         "Name": "Heartstring Nocturne",
-        "Rating": "100%"
+        "Rating": "106.15%"
       },
       {
         "Name": "Myriad Eclipse",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Starlight Engine",
-        "Rating": "100%"
+        "Rating": "104.70%"
       },
       {
         "Name": "Steel Cushion",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "The Brimstone",
-        "Rating": "100%"
+        "Rating": "94.81%"
+      },
+      {
+        "Name": "Starlight Engine",
+        "Rating": "90.82%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Fanged Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
         "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate% = CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "PEN Ratio%",
+          "= Physical DMG% = ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2500 - 3100+ (Optional)",
+      "HP: 9500+",
+      "DEF: 800+",
+      "CRIT RATE: 70% - 80%+",
+      "CRIT DMG: 140% - 160%+"
+    ]
   },
   "Calculation": []
 }

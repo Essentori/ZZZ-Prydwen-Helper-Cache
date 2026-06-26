@@ -2,79 +2,84 @@
   "Meta": {
     "Id": "cmoxppmtv007zoacktoffig8q",
     "Name": "Lighter",
-    "LastUpdated": "2026-06-25T12:35:11.654Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Blazing Laurel",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Demara Battery Mark II",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hellfire Gears",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Ice-Jade Teapot",
-        "Rating": "100%"
+        "Rating": "97.44%"
+      },
+      {
+        "Name": "Hellfire Gears",
+        "Rating": "92.51%"
       },
       {
         "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Six Shooter",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Spectral Gaze",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steam Oven",
-        "Rating": "100%"
+        "Rating": "92.43%"
       },
       {
         "Name": "The Restrained",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Simmering Pot",
-        "Rating": "100%"
+        "Rating": "90.80%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
+        "Name": "King of the Summit",
+        "Rating": "1%"
       },
       {
-        "Name": "King of the Summit",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       },
       {
         "Name": "Proto Punk",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
         "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "4%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "= CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK% = Fire DMG% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Impact"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE",
+      "CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "Impact: 170 - 195+",
+      "ATK: 1700 - 2000+ (Optional)",
+      "HP: 10500+",
+      "DEF: 800+",
+      "CRIT RATE: 50%+ (Needed for King of the Summit)",
+      "CRIT DMG: 100% - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }

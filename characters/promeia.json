@@ -2,83 +2,75 @@
   "Meta": {
     "Id": "cmoxppmzm009xoacko61gaq6m",
     "Name": "Promeia",
-    "LastUpdated": "2026-06-25T12:36:23.979Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Angel in the Shell",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Electro-Lip Gloss",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Flamemaker Shaker",
-        "Rating": "100%"
-      },
-      {
         "Name": "Frostfall Sickle",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Fusion Compiler",
-        "Rating": "100%"
+        "Rating": "99.31%"
       },
       {
-        "Name": "Practiced Perfection",
-        "Rating": "100%"
+        "Name": "Angel in the Shell",
+        "Rating": "93.29%"
       },
       {
-        "Name": "Rainforest Gourmet",
-        "Rating": "100%"
+        "Name": "Fusion Compiler",
+        "Rating": "92.32%"
       },
       {
-        "Name": "Roaring Ride",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Sharpened Stinger",
-        "Rating": "100%"
+        "Name": "Electro-Lip Gloss",
+        "Rating": "91.41%"
       },
       {
         "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Rating": "90.57%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
         "Name": "Notes From the Chained",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Rating": "100.00%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Ice DMG% = ATK%",
+          "PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Anomaly Mastery"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Proficiency",
+      "ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2600 - 2900+",
+      "HP: 9500+",
+      "DEF: 750+",
+      "Anomaly Proficiency: 287 - 350+ (add +90 to values if AP mainstat W-Engine)",
+      "Anomaly Mastery: 184 - 248"
+    ]
   },
   "Calculation": []
 }

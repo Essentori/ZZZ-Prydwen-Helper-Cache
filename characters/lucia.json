@@ -2,75 +2,64 @@
   "Meta": {
     "Id": "cmoxppmu10081oacksihz2ee3",
     "Name": "Lucia",
-    "LastUpdated": "2026-06-25T12:35:17.048Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bashful Demon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Cauldron of Clarity",
-        "Rating": "100%"
-      },
-      {
         "Name": "Dreamlit Hearth",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Original Transmorpher",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Slice of Time",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Vault",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Unfettered Game Ball",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Weeping Cradle",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
-        "Name": "[Reverb] Mark III",
-        "Rating": "100%"
+        "Name": "Kaboom the Cannon",
+        "Rating": "3%"
+      },
+      {
+        "Name": "Unfettered Game Ball",
+        "Rating": "4%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Bunny in Wonderland",
-        "Rating": "100%"
-      },
-      {
         "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Yunkui Tales",
-        "Rating": "100%"
+        "Rating": "1%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "HP%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "HP%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "HP%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "HP%",
+      "HP",
+      "CRIT Rate",
+      "= CRIT DMG"
+    ],
+    "EndgameStats": [
+      "ATK: 1800+",
+      "HP: 22000  - 24000+ (Focus on hitting 24000!)",
+      "DEF: 800+"
+    ]
   },
   "Calculation": []
 }

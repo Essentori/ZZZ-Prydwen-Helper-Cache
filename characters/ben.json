@@ -2,33 +2,29 @@
   "Meta": {
     "Id": "cmoxppmrc0077oackf82be8sp",
     "Name": "Ben",
-    "LastUpdated": "2026-06-25T12:33:40.281Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bunny Band",
-        "Rating": "100%"
+        "Name": "Tremor Trigram Vessel",
+        "Rating": "101.86%"
       },
       {
         "Name": "Cloudcleave Radiance",
-        "Rating": "100%"
+        "Rating": "100.71%"
       },
       {
         "Name": "Hailstorm Shrine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Original Transmorpher",
-        "Rating": "100%"
+        "Rating": "100.51%"
       },
       {
         "Name": "Severed Innocence",
-        "Rating": "100%"
+        "Rating": "100.37%"
+      },
+      {
+        "Name": "Heartstring Nocturne",
+        "Rating": "100.16%"
       },
       {
         "Name": "Tremor Trigram Vessel",
@@ -37,40 +33,51 @@
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Bunny in Wonderland",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
         "Name": "Inferno Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "2%"
+      },
+      {
+        "Name": "Puffer Electro",
+        "Rating": "3%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "= CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Fire DMG% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE% (aim for 70%+) = CRIT DMG%",
+      "ATK%",
+      "Flat PEN = Flat ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2700 - 3600+",
+      "HP: 11500+",
+      "DEF: 1400 - 2600+",
+      "CRIT RATE: 50% - 60%+",
+      "CRIT DMG: 100% - 120%+"
+    ]
   },
   "Calculation": []
 }

@@ -2,91 +2,79 @@
   "Meta": {
     "Id": "cmoxppmyk009joackq5sif3gi",
     "Name": "Cissia",
-    "LastUpdated": "2026-06-25T12:34:08.303Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bellicose Blaze",
-        "Rating": "100%"
+        "Name": "Serpentine Seeker",
+        "Rating": "100.00%"
       },
       {
-        "Name": "Cordis Germina",
-        "Rating": "100%"
+        "Name": "Bellicose Blaze",
+        "Rating": "92.85%"
       },
       {
         "Name": "Drill Rig - Red Axis",
-        "Rating": "100%"
+        "Rating": "91.12%"
       },
       {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Riot Suppressor Mark VI",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Serpentine Seeker",
-        "Rating": "100%"
+        "Name": "Cordis Germina",
+        "Rating": "90.75%"
       },
       {
         "Name": "Severed Innocence",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Brimstone",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Rating": "88.02%"
       }
     ],
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
+        "Rating": "105.15%"
       },
       {
         "Name": "Dawn's Bloom",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Thunder Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "99.45%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Electric DMG%",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG = ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2500 - 2700+",
+      "HP: 9000+",
+      "DEF: 800+",
+      "CRIT RATE: 50% - 57% (with Signature W-Engine)",
+      "CRIT DMG: 110%+"
+    ]
   },
   "Calculation": []
 }

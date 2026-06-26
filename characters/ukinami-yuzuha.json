@@ -2,83 +2,80 @@
   "Meta": {
     "Id": "cmoxppmxp009boackyor9lzkt",
     "Name": "Yuzuha",
-    "LastUpdated": "2026-06-25T12:38:04.277Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bashful Demon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Elegant Vanity",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Metanukimorphosis",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Slice of Time",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Vault",
-        "Rating": "100%"
+        "Name": "Weeping Cradle",
+        "Rating": "102.38%"
       },
       {
         "Name": "Thoughtbop",
-        "Rating": "100%"
+        "Rating": "102.07%"
       },
       {
-        "Name": "Unfettered Game Ball",
-        "Rating": "100%"
+        "Name": "Metanukimorphosis",
+        "Rating": "100.00%"
       },
       {
         "Name": "Weeping Cradle",
-        "Rating": "100%"
+        "Rating": "93.51%"
       },
       {
-        "Name": "[Reverb] Mark III",
-        "Rating": "100%"
+        "Name": "Kaboom the Cannon",
+        "Rating": "93.28%"
+      },
+      {
+        "Name": "Unfettered Game Ball",
+        "Rating": "-%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
         "Name": "Moonlight Lullaby",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "ATK%",
+          "= Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%",
+          "= PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Anomaly Mastery = ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "ATK%",
+      "ATK (until 3000)",
+      "Anomaly Proficiency",
+      "PEN"
+    ],
+    "EndgameStats": [
+      "ATK: 3000+",
+      "HP: 11000+",
+      "DEF: 800+",
+      "Anomaly Proficiency: 200+Always prioritize ATK on your Disk Drives if under 3000 ATK. Anomaly Proficiency is optimal for the best damage at 3000 ATK or above.",
+      "Anomaly Mastery: 171"
+    ]
   },
   "Calculation": []
 }

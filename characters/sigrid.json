@@ -2,13 +2,14 @@
   "Meta": {
     "Id": "cmoxppn0c00a7oackf4qudad0",
     "Name": "Sigrid",
-    "LastUpdated": "2026-06-25T12:37:02.965Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [],
     "BestDiskSets": [],
     "MainStats": [],
-    "SubStats": []
+    "SubStats": [],
+    "EndgameStats": []
   },
   "Calculation": []
 }

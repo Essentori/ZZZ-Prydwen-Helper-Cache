@@ -2,42 +2,84 @@
   "Meta": {
     "Id": "cmoxppmqh006xoacka7r36cdd",
     "Name": "Anby",
-    "LastUpdated": "25/June/2026"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
-    "BestWEngines": [],
+    "BestWEngines": [
+      {
+        "Name": "Hellfire Gears",
+        "Rating": "103.72%"
+      },
+      {
+        "Name": "Steam Oven",
+        "Rating": "101.55%"
+      },
+      {
+        "Name": "Precious Fossilized Core",
+        "Rating": "101.05%"
+      },
+      {
+        "Name": "The Restrained",
+        "Rating": "100.00%"
+      },
+      {
+        "Name": "Demara Battery Mark II",
+        "Rating": "93.00%"
+      }
+    ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
         "Name": "King of the Summit",
-        "Rating": "100%"
+        "Rating": "1%"
+      },
+      {
+        "Name": "Astral Voice",
+        "Rating": "2%"
       },
       {
         "Name": "Proto Punk",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
         "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "4%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "= CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Electric DMG%",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Impact"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "Impact: 169 - 190+",
+      "ATK: 1700 - 2000+ (Optional)",
+      "HP: 9500+",
+      "DEF: 800+",
+      "CRIT RATE: 50%+ (Needed for King of the Summit)",
+      "CRIT DMG: 100% - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }

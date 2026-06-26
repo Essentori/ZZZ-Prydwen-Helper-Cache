@@ -2,83 +2,71 @@
   "Meta": {
     "Id": "cmoxppmqn006zoackpxr3hnmc",
     "Name": "Anby: Soldier 0",
-    "LastUpdated": "2026-06-25T12:33:11.919Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
+        "Name": "Severed Innocence",
+        "Rating": "100.00%"
+      },
+      {
         "Name": "Cordis Germina",
-        "Rating": "100%"
+        "Rating": "95.11%"
       },
       {
         "Name": "Heartstring Nocturne",
-        "Rating": "100%"
+        "Rating": "87.56%"
       },
       {
         "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Myriad Eclipse",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Riot Suppressor Mark VI",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Severed Innocence",
-        "Rating": "100%"
+        "Rating": "75.66%"
       },
       {
         "Name": "Starlight Engine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Brimstone",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Zanshin Herb Case",
-        "Rating": "100%"
+        "Rating": "71.56%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
-      },
-      {
         "Name": "Shadow Harmony",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Thunder Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "1%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "= CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Electric DMG%",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2800 - 3200+",
+      "HP: 10000+",
+      "DEF: 800+",
+      "CRIT RATE: 58% - 78% (before Additional Ability and Shadow Harmony)",
+      "CRIT DMG: 160% - 200%+ (before Core Passive)CRIT is a more valuable stat for S0 Anby compared to other characters, due to the additional scaling granted by her Core Passive. The 30% CRIT DMG multiplier to Aftershock damage makes stacking both CRIT-related stats even more of a priority."
+    ]
   },
   "Calculation": []
 }

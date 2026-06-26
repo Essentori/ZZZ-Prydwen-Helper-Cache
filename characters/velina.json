@@ -2,79 +2,65 @@
   "Meta": {
     "Id": "cmoxppn0r00adoack3mbkgkj6",
     "Name": "Velina",
-    "LastUpdated": "2026-06-25T12:37:30.660Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Drill Rig - Red Axis",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Electro-Lip Gloss",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Flamemaker Shaker",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Fusion Compiler",
-        "Rating": "100%"
-      },
-      {
         "Name": "Joyau Dore",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Rainforest Gourmet",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Serpentine Seeker",
-        "Rating": "100%"
+        "Rating": "92.87%"
       },
       {
-        "Name": "Steam Oven",
-        "Rating": "100%"
+        "Name": "Flamemaker Shaker",
+        "Rating": "92.32%"
       },
       {
-        "Name": "The Vault",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Name": "Kaboom the Cannon",
+        "Rating": "89.72%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
         "Name": "Wuthering Salon",
-        "Rating": "100%"
+        "Rating": "100.00%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Wind DMG% = ATK% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen"
+        ]
+      }
+    ],
+    "SubStats": [
+      "Anomaly Proficiency = ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2400 - 2600+",
+      "HP: 9500+",
+      "DEF: 750+",
+      "Anomaly Proficiency: 330 - 420+",
+      "Energy Regen: 2.88"
+    ]
   },
   "Calculation": []
 }

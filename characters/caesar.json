@@ -2,87 +2,77 @@
   "Meta": {
     "Id": "cmoxppmrt007doackulhde3fm",
     "Name": "Caesar",
-    "LastUpdated": "2026-06-25T12:34:01.996Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bunny Band",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Demara Battery Mark II",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hellfire Gears",
-        "Rating": "100%"
+        "Name": "Tusks of Fury",
+        "Rating": "100.00%"
       },
       {
         "Name": "Original Transmorpher",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Peacekeeper - Specialized",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Reel Projector",
-        "Rating": "100%"
+        "Rating": "88.45%"
       },
       {
         "Name": "Spring Embrace",
-        "Rating": "100%"
+        "Rating": "77.97%"
       },
       {
-        "Name": "The Restrained",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Tremor Trigram Vessel",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Tusks of Fury",
-        "Rating": "100%"
+        "Name": "Peacekeeper - Specialized",
+        "Rating": "77.97%"
       }
     ],
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Bunny in Wonderland",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Freedom Blues",
-        "Rating": "100%"
-      },
-      {
-        "Name": "King of the Summit",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Proto Punk",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
-        "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Name": "Freedom Blues",
+        "Rating": "3%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate% = Anomaly Proficiency"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Physical DMG%",
+          "ATK% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Impact"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 1400 - 2000+ (Optional)",
+      "HP: 12000+",
+      "DEF: 1000+",
+      "IMPACT: 145 - 170+ (Most Important Stat)",
+      "Anomaly Proficiency: 250 - 330+ (Optional)",
+      "Anomaly Mastery: 87+ (Optional)",
+      "CRIT RATE: 50 - 60%+ (Optional)",
+      "CRIT DMG: 100 - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }

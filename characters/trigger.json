@@ -2,87 +2,94 @@
   "Meta": {
     "Id": "cmoxppmwq008zoack7c0yyygi",
     "Name": "Trigger",
-    "LastUpdated": "2026-06-25T12:37:25.309Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
+        "Name": "Spectral Gaze",
+        "Rating": "100.00%"
+      },
+      {
         "Name": "Blazing Laurel",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Box Cutter",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Demara Battery Mark II",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hellfire Gears",
-        "Rating": "100%"
+        "Rating": "99.31%"
       },
       {
         "Name": "Ice-Jade Teapot",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Precious Fossilized Core",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Spectral Gaze",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steam Oven",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
+        "Rating": "97.75%"
       },
       {
         "Name": "The Restrained",
-        "Rating": "100%"
+        "Rating": "94.21%"
       },
       {
-        "Name": "The Simmering Pot",
-        "Rating": "100%"
+        "Name": "Precious Fossilized Core",
+        "Rating": "93.71%"
+      },
+      {
+        "Name": "Steam Oven",
+        "Rating": "93.32%"
+      },
+      {
+        "Name": "Hellfire Gears",
+        "Rating": "92.66%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
+        "Name": "King of the Summit",
+        "Rating": "1%"
       },
       {
-        "Name": "King of the Summit",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       },
       {
         "Name": "Proto Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shadow Harmony",
-        "Rating": "100%"
+        "Rating": "3%"
       },
       {
         "Name": "Shockstar Disco",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "4%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Electric DMG%",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Impact"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE",
+      "= CRIT DMG",
+      "ATK%",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 1700 - 2200+ (Optional)",
+      "HP: 10000+",
+      "DEF: 750+",
+      "IMPACT: 162 - 186 + (Most important stat)",
+      "CRIT RATE: 60 - 90%Most Stun characters have little use for sub-stats outside of improving their Sub DPS capabilities, but this is not the case for Trigger.",
+      "Stacking CRIT RATE grants her substantial DAZE% increase to all her Aftershock abilities, making it by far her highest priority stat after IMPACT% and DAZE% on gear.",
+      "Get as much CRIT RATE as you can until her additional ability caps out at 90%, then prioritize other stats (only doable with her signature).",
+      "CRIT DMG: 100 - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }

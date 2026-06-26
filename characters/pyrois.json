@@ -2,87 +2,69 @@
   "Meta": {
     "Id": "cmoxppmzr009zoack164an8ct",
     "Name": "Pyrois",
-    "LastUpdated": "2026-06-25T12:36:35.423Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Cannon Rotor",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Cordis Germina",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Riot Suppressor Mark VI",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Severed Innocence",
-        "Rating": "100%"
+        "Name": "Sol Exuvia",
+        "Rating": "104.44%"
       },
       {
         "Name": "Sol Exuvia",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
-        "Name": "Starlight Engine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Brimstone",
-        "Rating": "100%"
+        "Name": "Cordis Germina",
+        "Rating": "91.63%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaotic Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
+        "Name": "The Sky Ablaze",
+        "Rating": "100.00%"
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Shining Aria",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Sky Ablaze",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "98.39%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "CRIT DMG%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "PEN Ratio%",
+          "Ether DMG%",
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE (until 100% in combat)",
+      "CRIT DMG = ATK%",
+      "Flat PEN",
+      "Flat ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 2800 - 3200+",
+      "HP: 9500+",
+      "DEF: 750+",
+      "CRIT RATE: 57% - 72% (before Sol Exuvia and M1)",
+      "CRIT DMG: 140% - 180%+"
+    ]
   },
   "Calculation": []
 }

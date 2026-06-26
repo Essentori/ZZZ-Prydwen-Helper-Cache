@@ -2,75 +2,65 @@
   "Meta": {
     "Id": "cmoxppmxy009doack7gustwf4",
     "Name": "Zhao",
-    "LastUpdated": "2026-06-25T12:38:10.083Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bunny Band",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Cauldron of Clarity",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Grill O'Wisp",
-        "Rating": "100%"
-      },
-      {
         "Name": "Half-Sugar Bunny",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Original Transmorpher",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Reel Projector",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Spring Embrace",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Tremor Trigram Vessel",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Tusks of Fury",
-        "Rating": "100%"
+        "Rating": "2%"
+      },
+      {
+        "Name": "Original Transmorpher",
+        "Rating": "3%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
         "Name": "Bunny in Wonderland",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
-        "Name": "Moonlight Lullaby",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Swing Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Yunkui Tales",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "HP%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "HP%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen"
+        ]
+      }
+    ],
+    "SubStats": [
+      "HP% (Until 27000 Initial HP)",
+      "Flat HP (Until 27000 Initial HP)",
+      "Crit Rate = Crit DMG"
+    ],
+    "EndgameStats": [
+      "ATK: 1900+",
+      "HP: 25000+",
+      "DEF: 800+",
+      "Crit Rate: 30%+",
+      "Crit DMG: 50%+"
+    ]
   },
   "Calculation": []
 }

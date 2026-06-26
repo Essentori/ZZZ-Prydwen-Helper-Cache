@@ -2,83 +2,80 @@
   "Meta": {
     "Id": "cmoxppmuo0089oackc3ld8nau",
     "Name": "Miyabi",
-    "LastUpdated": "2026-06-25T12:35:40.037Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Electro-Lip Gloss",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Frostfall Sickle",
-        "Rating": "100%"
+        "Name": "Hailstorm Shrine",
+        "Rating": "100.00%"
       },
       {
         "Name": "Fusion Compiler",
-        "Rating": "100%"
+        "Rating": "78.75%"
       },
       {
-        "Name": "Hailstorm Shrine",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Kaboom the Cannon",
-        "Rating": "100%"
+        "Name": "Electro-Lip Gloss",
+        "Rating": "76.81%"
       },
       {
         "Name": "Rainforest Gourmet",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Roaring Ride",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Steel Cushion",
-        "Rating": "100%"
+        "Rating": "73.46%"
       },
       {
         "Name": "Weeping Gemini",
-        "Rating": "100%"
+        "Rating": "69.52%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
         "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Polar Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Rating": "100.00%"
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "95.22%"
+      },
+      {
+        "Name": "Polar Metal",
+        "Rating": "93.49%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT Rate%",
+          "= ATK%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "Ice DMG% = ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE (Until 80%)",
+      "= CRIT DMG = ATK%",
+      "Anomaly Proficiency = ATK = PEN"
+    ],
+    "EndgameStats": [
+      "ATK: 2500 - 3600+ (Depending on Disc Drive main stat choice)",
+      "HP: 10000+",
+      "DEF: 800+",
+      "Anomaly Mastery: 116+",
+      "Anomaly Proficiency: 240+",
+      "CRIT RATE: 75-95%",
+      "CRIT DMG: 150-190%"
+    ]
   },
   "Calculation": []
 }

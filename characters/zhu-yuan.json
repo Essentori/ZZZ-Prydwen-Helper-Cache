@@ -2,71 +2,78 @@
   "Meta": {
     "Id": "cmoxppmy6009foackol72dqz2",
     "Name": "Zhu Yuan",
-    "LastUpdated": "2026-06-25T12:38:15.393Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
         "Name": "Cordis Germina",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Heartstring Nocturne",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Marcato Desire",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Riot Suppressor Mark VI",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Starlight Engine",
-        "Rating": "100%"
+        "Rating": "100.90%"
       },
       {
         "Name": "The Brimstone",
-        "Rating": "100%"
+        "Rating": "100.00%"
+      },
+      {
+        "Name": "Riot Suppressor Mark VI",
+        "Rating": "93.88%"
+      },
+      {
+        "Name": "Marcato Desire",
+        "Rating": "87.45%"
+      },
+      {
+        "Name": "Starlight Engine",
+        "Rating": "87.30%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Branch & Blade Song",
-        "Rating": "100%"
-      },
-      {
         "Name": "Chaotic Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Dawn's Bloom",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Sky Ablaze",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "100%"
+        "Rating": "3%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "CRIT DMG% = CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%",
+          "Ether DMG% = PEN Ratio%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "CRIT RATE = CRIT DMG = ATK%",
+      "PEN",
+      "ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 3000+",
+      "HP: 9500+",
+      "DEF: 800+",
+      "CRIT RATE: 60% - 70% (90% - 100% with Add Ability; Max 55% with Nicole M6)",
+      "CRIT DMG: 160% - 180%+ (Without Chaotic Metal Buff)"
+    ]
   },
   "Calculation": []
 }

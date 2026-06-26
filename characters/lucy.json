@@ -2,87 +2,80 @@
   "Meta": {
     "Id": "cmoxppmu60083oackdljusvs5",
     "Name": "Lucy",
-    "LastUpdated": "2026-06-25T12:35:22.746Z"
+    "LastUpdated": "26/June/2026"
   },
   "Build": {
     "BestWEngines": [
       {
-        "Name": "Bashful Demon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Drill Rig - Red Axis",
-        "Rating": "100%"
-      },
-      {
         "Name": "Kaboom the Cannon",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Slice of Time",
-        "Rating": "100%"
-      },
-      {
-        "Name": "The Vault",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Unfettered Game Ball",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
         "Name": "Weeping Cradle",
-        "Rating": "100%"
+        "Rating": "2%"
       },
       {
-        "Name": "Weeping Gemini",
-        "Rating": "100%"
-      },
-      {
-        "Name": "[Reverb] Mark I",
-        "Rating": "100%"
+        "Name": "Slice of Time",
+        "Rating": "3%"
       },
       {
         "Name": "[Reverb] Mark II",
-        "Rating": "100%"
+        "Rating": "4%"
+      },
+      {
+        "Name": "Unfettered Game Ball",
+        "Rating": "5%"
       }
     ],
     "BestDiskSets": [
       {
-        "Name": "Astral Voice",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Chaos Jazz",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Fanged Metal",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Hormone Punk",
-        "Rating": "100%"
-      },
-      {
         "Name": "Moonlight Lullaby",
-        "Rating": "100%"
+        "Rating": "1%"
       },
       {
-        "Name": "Phaethon's Melody",
-        "Rating": "100%"
-      },
-      {
-        "Name": "Puffer Electro",
-        "Rating": "100%"
+        "Name": "Astral Voice",
+        "Rating": "2%"
       },
       {
         "Name": "Swing Jazz",
-        "Rating": "100%"
+        "Rating": "3%"
       }
     ],
-    "MainStats": [],
-    "SubStats": []
+    "MainStats": [
+      {
+        "Slot": "4",
+        "Stats": [
+          "ATK%",
+          "CRIT Rate%"
+        ]
+      },
+      {
+        "Slot": "5",
+        "Stats": [
+          "ATK%"
+        ]
+      },
+      {
+        "Slot": "6",
+        "Stats": [
+          "Energy Regen = ATK%"
+        ]
+      }
+    ],
+    "SubStats": [
+      "ATK% (top priority until ability cap) = CRIT RATE = CRIT DMG",
+      "PEN = ATK"
+    ],
+    "EndgameStats": [
+      "ATK: 1923 (Lvl 16 Special)",
+      "2000 (Lvl 15 Special)",
+      "2475 (Lvl 10 Special)",
+      "2700 (Lvl 8 Special)",
+      "HP: 10000+",
+      "DEF: 800+",
+      "CRIT RATE: 40% - 60%+ (Optional)",
+      "CRIT DMG: 100% - 120%+ (Optional)"
+    ]
   },
   "Calculation": []
 }
