@@ -1,4 +1,6 @@
 name: Auto Update ZZZ Data
+env:
+  ACTION_VERSION: "1.0"
 
 on:
   schedule:
@@ -39,9 +41,17 @@ jobs:
             if git diff --cached --quiet; then
               echo "No changes detected. Skipping commit."
             else
+              if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+                TYPE="manual"
+              else
+                TYPE="auto"
+              fi
+              
               VERSION=$(node -e "const fs=require('fs'); const m=fs.readFileSync('scraper.js','utf8').match(/const SCRAPER_VERSION\s*=\s*['\"]([^'\"]+)['\"]/); console.log(m?m[1]:'1.0.0');")
               CURRENT_DATE=$(date +'%m.%d.%y')
               
-              git commit -m "db: automated update of characters and data [$CURRENT_DATE]" -m "Scraper Version: $VERSION"
+              git commit -m "db: update [$CURRENT_DATE | $TYPE]" \
+                         -m "Scraper: $VERSION" \
+                         -m "Action Version: $ACTION_VERSION"
               git push origin main
             fi
