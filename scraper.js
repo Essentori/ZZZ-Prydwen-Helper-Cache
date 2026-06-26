@@ -344,7 +344,6 @@ async function runScraper() {
                 fs.writeFileSync(charFilePath, JSON.stringify(finalizedCharacterData, null, 2), 'utf-8');
                 console.log(`[Success] Saved localized cache for ${char.Name}`);
                 char.LastUpdated = remoteLastUpdated;
-                break;
             } catch (charError) {
                 console.error(`[Error] Failed processing ${char.Name}:`, charError.message);
             }
