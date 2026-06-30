@@ -3,7 +3,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 
-// Script version for database migration control (Hotfix -)
+// Script version for database migration control (Hotfix v1.7.1)
 const SCRAPER_VERSION = "1.7"; 
 
 puppeteer.use(StealthPlugin());
@@ -29,10 +29,6 @@ function parsePrydwenDate(dateStr) {
 }
 
 function formatToPrydwenDate(dateInput) {
-    if (!dateInput) return "";
-    if (typeof dateInput === 'string' && dateInput.split('/').length === 3) {
-        return dateInput;
-    }
     const months = [
         "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
@@ -131,6 +127,19 @@ function extractObjFromPayload(stream, html, keyName) {
         if (res) return res;
     }
     return extractJsonObject(html, keyName);
+}
+
+function extractUpdateDate(html, stream) {
+    const match = html.match(/(?:\\"last_updated\\"|\\"updated_at\\"|\\"updatedAt\\"|["']last_updated["']|["']updated_at["']|["']updatedAt["'])\s*:\s*\\?"([^\\"]+)\\?"/) ||
+                  (stream && stream.match(/(?:\\"last_updated\\"|\\"updated_at\\"|\\"updatedAt\\"|["']last_updated["']|["']updated_at["']|["']updatedAt["'])\s*:\s*\\?"([^\\"]+)\\?"/));
+    if (match) {
+        const val = match[1];
+        if (val.split('/').length === 3 && isNaN(Number(val.split('/')[1]))) return val;
+        return formatToPrydwenDate(val);
+    }
+    const visibleMatch = html.match(/Last updated:\s*([A-Za-z0-9\s,]+)/i);
+    if (visibleMatch) return formatToPrydwenDate(visibleMatch[1].trim());
+    return formatToPrydwenDate(new Date());
 }
 
 async function runScraper() {
@@ -250,6 +259,24 @@ async function runScraper() {
                     return window.__next_f.map(chunk => Array.isArray(chunk) ? chunk[1] : '').filter(Boolean).join('');
                 });
 
+                // 0. Metadata
+                const characterObj = extractObjFromPayload(detailStream, detailHtml, "character") || {};
+                
+                let remoteLastUpdated = extractUpdateDate(detailHtml, detailStream);
+                if (characterObj && characterObj.updatedAt) {
+                    remoteLastUpdated = formatToPrydwenDate(characterObj.updatedAt);
+                }
+
+                if (forceFullUpdate) {
+                    console.log(`[Migration Override] Version migration active! Forcing full rebuild for ${char.Name}.`);
+                } else if (localLastUpdated && remoteLastUpdated === localLastUpdated) {
+                    console.log(`[Status] ${char.Name} up-to-date (${remoteLastUpdated}). Skipping deep extraction.`);
+                    char.LastUpdated = remoteLastUpdated;
+                    continue;
+                }
+
+                console.log(`[Update] Extracting data for ${char.Name} from https://www.prydwen.gg/zenless/characters/${char.Link} ...`);
+
                 // 1. W-Engines (engineBuilds)
                 const rawEngines = extractFromPayload(detailStream, detailHtml, "engineBuilds") || [];
                 const bestWEngines = rawEngines.map(e => {
@@ -273,6 +300,7 @@ async function runScraper() {
                         ratingStr = "100.00"; 
                     }
                     
+                    // 2.1 Two Piece Options
                     let twoPieces = [];
                     for (let i = 1; i <= 5; i++) {
                         let smallSetKey = s[`Set_small_${i}`];
@@ -306,11 +334,8 @@ async function runScraper() {
 
                 // 4. Endgame Stats
                 let endgameStats = [];
-                const endgameMatch = detailHtml.match(/(?:\\"endgameStats\\"|["']endgameStats["'])\s*:\s*\\*"(.*?)\\*"/i) || 
-                                     detailStream.match(/(?:\\"endgameStats\\"|["']endgameStats["'])\s*:\s*\\*"(.*?)\\*"/i);
-                if (endgameMatch) {
-                    const cleanHtml = endgameMatch[1].replace(/\\"/g, '"').replace(/\\\\/g, '\\').replace(/\\\/g, '/');
-                    const matches = cleanHtml.match(/<li>(.*?)<\/li>/g);
+                if (characterObj.endgameStats) {
+                    const matches = characterObj.endgameStats.match(/<li>(.*?)<\/li>/g);
                     if (matches) {
                         endgameStats = matches.map(m => m.replace(/<\/?li>/g, '').replace(/<[^>]+>/g, '').trim());
                     }
@@ -318,91 +343,21 @@ async function runScraper() {
 
                 // 5. Calculations (Mindscapes)
                 let calculation = [];
-                let dpsObj = extractJsonObject(detailStream, "dps_standard") || 
-                             extractJsonObject(detailHtml, "dps_standard");
-                             
-                if (!dpsObj) {
-                    const additionalAbility = extractJsonObject(detailStream, "additional_ability") || 
-                                              extractJsonObject(detailHtml, "additional_ability");
-                    if (additionalAbility) {
-                        dpsObj = additionalAbility.dps_standard || 
-                                 (additionalAbility.damage_calc && additionalAbility.damage_calc.dps) ||
-                                 additionalAbility.dps;
-                    }
-                }
-
-                if (dpsObj) {
-                    const baseDmg = dpsObj.damage || dpsObj.base_damage || dpsObj.dps;
-                    if (baseDmg) {
-                        const prefixes = ['e', 'm', 'c'];
-                        for (const prefix of prefixes) {
-                            let tempCalc = [];
-                            for (let i = 1; i <= 6; i++) {
-                                const mDmg = dpsObj[`damage_${prefix}${i}`] || dpsObj[`${prefix}${i}`];
-                                if (mDmg) {
-                                    tempCalc.push({ Label: `M${i}`, Value: ((mDmg / baseDmg) * 100).toFixed(2) + "%" });
-                                }
+                let addAbil = characterObj.additional_ability || (characterObj.data && characterObj.data.additional_ability);
+                if (addAbil) {
+                    const dpsObj = addAbil.dps_standard || 
+                                   (addAbil.damage_calc && addAbil.damage_calc.dps);
+                    if (dpsObj && dpsObj.damage) {
+                        const baseDmg = dpsObj.damage;
+                        const mindscapes = ['e1', 'e2', 'e3', 'e4', 'e5', 'e6'];
+                        calculation = mindscapes.map((m, idx) => {
+                            const mDmg = dpsObj[`damage_${m}`];
+                            if (mDmg) {
+                                return { Label: `M${idx + 1}`, Value: ((mDmg / baseDmg) * 100).toFixed(2) + "%" };
                             }
-                            if (tempCalc.length > 0) {
-                                calculation = tempCalc;
-                                break;
-                            }
-                        }
+                            return null;
+                        }).filter(Boolean);
                     }
-                }
-
-                if (calculation.length === 0) {
-                    const baseDmgMatch = detailStream.match(/(?:\\"damage\\"|["']damage["'])\s*:\s*\\*"?(\d+(?:\.\d+)?)\\*"?/) ||
-                                         detailHtml.match(/(?:\\"damage\\"|["']damage["'])\s*:\s*\\*"?(\d+(?:\.\d+)?)\\*"?/);
-                    if (baseDmgMatch) {
-                        const baseDmg = parseFloat(baseDmgMatch[1]);
-                        if (baseDmg > 0) {
-                            const prefixes = ['e', 'm', 'c'];
-                            for (const prefix of prefixes) {
-                                let tempCalc = [];
-                                for (let i = 1; i <= 6; i++) {
-                                    const mDmgRegex = new RegExp(`(?:\\\\\"damage_${prefix}${i}\\\\\\\"|[\"']damage_${prefix}${i}[\"'])\\s*:\\s*\\\\*\"?(\\d+(?:\\.\\d+)?)\\\\*\"?`);
-                                    const mDmgMatch = detailStream.match(mDmgRegex) || detailHtml.match(mDmgRegex);
-                                    if (mDmgMatch) {
-                                        const mDmg = parseFloat(mDmgMatch[1]);
-                                        tempCalc.push({ Label: `M${i}`, Value: ((mDmg / baseDmg) * 100).toFixed(2) + "%" });
-                                    }
-                                }
-                                if (tempCalc.length > 0) {
-                                    calculation = tempCalc;
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                // 6. Metadata
-                let remoteLastUpdated = "30/June/2026"; 
-                const updatedAtMatch = detailStream.match(/(?:\\"updatedAt\\"|["']updatedAt["'])\s*:\s*\\*"(\d{4}-\d{2}-\d{2}T[^\\"]+)\\*"/);
-                if (updatedAtMatch) {
-                    remoteLastUpdated = formatToPrydwenDate(updatedAtMatch[1]);
-                } else {
-                    const visibleMatches = [...detailHtml.matchAll(/Last updated:\s*([A-Za-z0-9\s/,-]+)/ig)];
-                    if (visibleMatches.length > 0) {
-                        let chosenDate = visibleMatches[0][1].trim();
-                        for (const m of visibleMatches) {
-                            const dStr = m[1].trim();
-                            if (dStr !== "14/June/2026") {
-                                chosenDate = dStr;
-                                break;
-                            }
-                        }
-                        remoteLastUpdated = formatToPrydwenDate(chosenDate);
-                    }
-                }
-
-                if (forceFullUpdate) {
-                    console.log(`[Migration Override] Version migration active! Forcing full rebuild for ${char.Name}.`);
-                } else if (localLastUpdated && remoteLastUpdated === localLastUpdated) {
-                    console.log(`[Status] ${char.Name} up-to-date (${remoteLastUpdated}). Skipping deep extraction.`);
-                    char.LastUpdated = remoteLastUpdated;
-                    continue;
                 }
 
                 const finalizedCharacterData = {
