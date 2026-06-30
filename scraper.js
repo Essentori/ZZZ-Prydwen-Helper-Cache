@@ -3,8 +3,8 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 
-// Script version for database migration control (Hotfix v1.5.1)
-const SCRAPER_VERSION = "1.5"; 
+// Script version for database migration control (Hotfix -)
+const SCRAPER_VERSION = "1.6"; 
 
 puppeteer.use(StealthPlugin());
 
@@ -130,8 +130,8 @@ function extractObjFromPayload(stream, html, keyName) {
 }
 
 function extractUpdateDate(html, stream) {
-    const match = html.match(/(?:\\"last_updated\\"|\\"updated_at\\"|["']last_updated["']|["']updated_at["'])\s*:\s*\\?"([^\\"]+)\\?"/) ||
-                  (stream && stream.match(/(?:\\"last_updated\\"|\\"updated_at\\"|["']last_updated["']|["']updated_at["'])\s*:\s*\\?"([^\\"]+)\\?"/));
+    const match = html.match(/(?:\\"last_updated\\"|\\"updated_at\\"|\\"updatedAt\\"|["']last_updated["']|["']updated_at["']|["']updatedAt["'])\s*:\s*\\?"([^\\"]+)\\?"/) ||
+                  (stream && stream.match(/(?:\\"last_updated\\"|\\"updated_at\\"|\\"updatedAt\\"|["']last_updated["']|["']updated_at["']|["']updatedAt["'])\s*:\s*\\?"([^\\"]+)\\?"/));
     if (match) {
         const val = match[1];
         if (val.split('/').length === 3 && isNaN(Number(val.split('/')[1]))) return val;
@@ -253,14 +253,19 @@ async function runScraper() {
                 await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
                 await new Promise(resolve => setTimeout(resolve, 5000));
 
-                // 0. Metadata
                 const detailHtml = await page.content();
                 const detailStream = await page.evaluate(() => {
                     if (!window.__next_f || !Array.isArray(window.__next_f)) return '';
                     return window.__next_f.map(chunk => Array.isArray(chunk) ? chunk[1] : '').filter(Boolean).join('');
                 });
 
-                const remoteLastUpdated = extractUpdateDate(detailHtml, detailStream);
+                // 0. Metadata
+                const characterObj = extractObjFromPayload(detailStream, detailHtml, "character") || {};
+                
+                let remoteLastUpdated = extractUpdateDate(detailHtml, detailStream);
+                if (characterObj && characterObj.updatedAt) {
+                    remoteLastUpdated = formatToPrydwenDate(characterObj.updatedAt);
+                }
 
                 if (forceFullUpdate) {
                     console.log(`[Migration Override] Version migration active! Forcing full rebuild for ${char.Name}.`);
@@ -270,7 +275,7 @@ async function runScraper() {
                     continue;
                 }
 
-                console.log(`[Update] Extracting  data for ${char.Name} from https://www.prydwen.gg/zenless/characters/${char.Link} ...`);
+                console.log(`[Update] Extracting data for ${char.Name} from https://www.prydwen.gg/zenless/characters/${char.Link} ...`);
 
                 // 1. W-Engines (engineBuilds)
                 const rawEngines = extractFromPayload(detailStream, detailHtml, "engineBuilds") || [];
@@ -281,10 +286,29 @@ async function runScraper() {
 
                 // 2. Drive Sets (diskBuilds)
                 const rawSets = extractFromPayload(detailStream, detailHtml, "diskBuilds") || [];
-                const bestDiskSets = rawSets.map(s => ({
-                    Name: s.Set || "Unknown Set",
-                    Rating: String(s.Percentage || "100%").replace('%', '').trim() + "%"
-                }));
+                const bestDiskSets = rawSets.map(s => {
+                    let ratingStr = String(s.Percentage || "100%").replace('%', '').trim();
+                    let numericRating = parseFloat(ratingStr);
+                    // Fallback to 100% if they are using priority numbers like 1, 2, 3
+                    if (!isNaN(numericRating) && numericRating <= 10) {
+                        ratingStr = "100.00"; 
+                    }
+                    
+                    // 2.1 Two Piece Options
+                    let twoPieces = [];
+                    for (let i = 1; i <= 5; i++) {
+                        let smallSetKey = s[`Set_small_${i}`];
+                        if (smallSetKey && smallSetKey.trim() !== "") {
+                            twoPieces.push(smallSetKey.trim());
+                        }
+                    }
+
+                    return {
+                        Name: s.Set || "Unknown Set",
+                        Rating: ratingStr + "%",
+                        TwoPieceOptions: twoPieces
+                    };
+                });
 
                 // 3. Stats Priority & Substats (statBuilds)
                 const rawStats = extractFromPayload(detailStream, detailHtml, "statBuilds") || [];
@@ -302,9 +326,7 @@ async function runScraper() {
                     }
                 }
 
-                // 4. Endgame Stats & Calculations ("character" root object)
-                const characterObj = extractObjFromPayload(detailStream, detailHtml, "character") || {};
-                
+                // 4. Endgame Stats
                 let endgameStats = [];
                 if (characterObj.endgameStats) {
                     const matches = characterObj.endgameStats.match(/<li>(.*?)<\/li>/g);
@@ -313,10 +335,12 @@ async function runScraper() {
                     }
                 }
 
+                // 5. Calculations (Mindscapes)
                 let calculation = [];
-                if (characterObj.data && characterObj.data.additional_ability) {
-                    const dpsObj = characterObj.data.additional_ability.dps_standard || 
-                                   (characterObj.data.additional_ability.damage_calc && characterObj.data.additional_ability.damage_calc.dps);
+                let addAbil = characterObj.additional_ability || (characterObj.data && characterObj.data.additional_ability);
+                if (addAbil) {
+                    const dpsObj = addAbil.dps_standard || 
+                                   (addAbil.damage_calc && addAbil.damage_calc.dps);
                     if (dpsObj && dpsObj.damage) {
                         const baseDmg = dpsObj.damage;
                         const mindscapes = ['e1', 'e2', 'e3', 'e4', 'e5', 'e6'];
