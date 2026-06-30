@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Script version for database migration control
-const SCRAPER_VERSION = "1.4"; 
+const SCRAPER_VERSION = "1.5"; 
 
 puppeteer.use(StealthPlugin());
 
@@ -248,7 +248,7 @@ async function runScraper() {
             console.log(`--------------------------------------------------`);
             console.log(`Processing: ${char.Name} (${slug})`);
             
-            const targetUrl = `https://www.prydwen.gg${char.Link}`;
+            const targetUrl = `https://www.prydwen.gg/zenless/characters/${char.Link}`;
             try {
                 await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
                 await new Promise(resolve => setTimeout(resolve, 5000));
