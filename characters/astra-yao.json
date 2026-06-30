@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmqz0073oackvt2co010",
     "Name": "Astra Yao",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,11 +26,19 @@
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz, Moonlight Lullaby",
+          "Hormone Punk"
+        ]
       },
       {
         "Name": "Moonlight Lullaby",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz",
+          "Hormone Punk, Astral Voice"
+        ]
       }
     ],
     "MainStats": [

@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmyk009joackq5sif3gi",
     "Name": "Cissia",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,15 +30,32 @@
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "105.15%"
+        "Rating": "105.15%",
+        "TwoPieceOptions": [
+          "Swing Jazz, Moonlight Lullaby",
+          "Branch & Blade Song",
+          "Thunder Metal",
+          "Woodpecker Electro"
+        ]
       },
       {
         "Name": "Dawn's Bloom",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz, Moonlight Lullaby",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk",
+          "Thunder Metal",
+          "Woodpecker Electro"
+        ]
       },
       {
         "Name": "Thunder Metal",
-        "Rating": "99.45%"
+        "Rating": "99.45%",
+        "TwoPieceOptions": [
+          "Swing Jazz, Moonlight Lullaby",
+          "Branch & Blade Song"
+        ]
       }
     ],
     "MainStats": [

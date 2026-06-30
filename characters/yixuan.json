@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmxj0099oackdfohg5k6",
     "Name": "Yixuan",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -34,7 +34,11 @@
     "BestDiskSets": [
       {
         "Name": "Yunkui Tales",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song"
+        ]
       }
     ],
     "MainStats": [

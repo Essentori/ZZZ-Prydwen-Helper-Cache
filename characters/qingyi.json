@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmvs008noack83q9q7i3",
     "Name": "Qingyi",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,19 +26,37 @@
     "BestDiskSets": [
       {
         "Name": "King of the Summit",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Shockstar Disco",
+          "Swing Jazz"
+        ]
       },
       {
         "Name": "Astral Voice",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "King of the Summit",
+          "Shockstar Disco",
+          "Swing Jazz"
+        ]
       },
       {
         "Name": "Proto Punk",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "King of the Summit",
+          "Shockstar Disco",
+          "Swing Jazz"
+        ]
       },
       {
         "Name": "Shockstar Disco",
-        "Rating": "4%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "King of the Summit",
+          "Swing Jazz"
+        ]
       }
     ],
     "MainStats": [

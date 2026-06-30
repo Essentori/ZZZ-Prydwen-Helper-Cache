@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmsv007noackhs7s3ffj",
     "Name": "Grace",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "23/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,11 +30,23 @@
     "BestDiskSets": [
       {
         "Name": "Thunder Metal",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Puffer Electro",
+          "Phaethon's Melody",
+          "Freedom Blues",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Chaos Jazz",
-        "Rating": "99.95%"
+        "Rating": "99.95%",
+        "TwoPieceOptions": [
+          "Puffer Electro",
+          "Phaethon's Melody",
+          "Freedom Blues",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [

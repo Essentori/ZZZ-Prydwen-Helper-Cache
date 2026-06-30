@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmrc0077oackf82be8sp",
     "Name": "Ben",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -34,15 +34,33 @@
     "BestDiskSets": [
       {
         "Name": "Inferno Metal",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk",
+          "Puffer Electro"
+        ]
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Branch & Blade Song",
+          "Inferno Metal",
+          "Astral Voice, Hormone Punk",
+          "Puffer Electro"
+        ]
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Inferno Metal",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [

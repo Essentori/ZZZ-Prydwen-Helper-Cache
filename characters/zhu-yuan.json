@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmy6009foackol72dqz2",
     "Name": "Zhu Yuan",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,15 +30,33 @@
     "BestDiskSets": [
       {
         "Name": "Chaotic Metal",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Astral Voice, Hormone Punk",
+          "Branch & Blade Song",
+          "Dawn's Bloom"
+        ]
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk",
+          "Chaotic Metal"
+        ]
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Branch & Blade Song",
+          "Chaotic Metal",
+          "Astral Voice, Hormone Punk",
+          "Dawn's Bloom"
+        ]
       }
     ],
     "MainStats": [

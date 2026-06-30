@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmrt007doackulhde3fm",
     "Name": "Caesar",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,15 +26,29 @@
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Shockstar Disco",
+          "King of the Summit",
+          "Proto Punk"
+        ]
       },
       {
         "Name": "Proto Punk",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Shockstar Disco",
+          "King of the Summit"
+        ]
       },
       {
         "Name": "Freedom Blues",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Shockstar Disco",
+          "King of the Summit",
+          "Proto Punk"
+        ]
       }
     ],
     "MainStats": [

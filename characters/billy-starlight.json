@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmz2009poackbxoackjj",
     "Name": "Billy - Starlight",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "17/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -38,7 +38,14 @@
     "BestDiskSets": [
       {
         "Name": "Yunkui Tales",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Fanged Metal, White Water Ballad",
+          "Astral Voice, Hormone Punk",
+          "Bunny in Wonderland"
+        ]
       }
     ],
     "MainStats": [

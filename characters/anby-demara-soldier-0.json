@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmqn006zoackpxr3hnmc",
     "Name": "Anby: Soldier 0",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,7 +30,14 @@
     "BestDiskSets": [
       {
         "Name": "Shadow Harmony",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Hormone Punk, Astral Voice",
+          "Thunder Metal",
+          "Branch & Blade Song",
+          "Puffer Electro"
+        ]
       }
     ],
     "MainStats": [

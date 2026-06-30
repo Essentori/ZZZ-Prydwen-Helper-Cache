@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmvb008hoackb246r7li",
     "Name": "Pan Yinhu",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,15 +26,29 @@
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Hormone Punk",
+          "Swing Jazz",
+          "Fanged Metal"
+        ]
       },
       {
         "Name": "Proto Punk",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Hormone Punk",
+          "Swing Jazz",
+          "Fanged Metal"
+        ]
       },
       {
         "Name": "Swing Jazz",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Hormone Punk",
+          "Fanged Metal"
+        ]
       }
     ],
     "MainStats": [

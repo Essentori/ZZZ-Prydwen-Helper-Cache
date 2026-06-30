@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmsj007joackp1jhrrj1",
     "Name": "Ellen",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -34,15 +34,33 @@
     "BestDiskSets": [
       {
         "Name": "Puffer Electro",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Polar Metal",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "99.35%"
+        "Rating": "99.35%",
+        "TwoPieceOptions": [
+          "Puffer Electro",
+          "Polar Metal",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Shadow Harmony",
-        "Rating": "93.24%"
+        "Rating": "93.24%",
+        "TwoPieceOptions": [
+          "Puffer Electro",
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [

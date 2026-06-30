@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmx20093oackk6ynsaqx",
     "Name": "Yanagi",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,7 +26,13 @@
     "BestDiskSets": [
       {
         "Name": "Chaos Jazz",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Freedom Blues",
+          "Puffer Electro",
+          "Thunder Metal",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [

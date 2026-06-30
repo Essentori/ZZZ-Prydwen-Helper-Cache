@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmw3008roack6vxpztus",
     "Name": "Seed",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -38,15 +38,36 @@
     "BestDiskSets": [
       {
         "Name": "Dawn's Bloom",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Puffer Electro",
+          "Thunder Metal",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "96.80%"
+        "Rating": "96.80%",
+        "TwoPieceOptions": [
+          "Branch & Blade Song",
+          "Puffer Electro",
+          "Dawn's Bloom",
+          "Thunder Metal",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Hormone Punk",
-        "Rating": "94.75%"
+        "Rating": "94.75%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Branch & Blade Song",
+          "Dawn's Bloom",
+          "Puffer Electro",
+          "Thunder Metal"
+        ]
       }
     ],
     "MainStats": [

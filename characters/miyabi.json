@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmuo0089oackc3ld8nau",
     "Name": "Miyabi",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,15 +30,33 @@
     "BestDiskSets": [
       {
         "Name": "Branch & Blade Song",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Polar Metal",
+          "Astral Voice, Hormone Punk",
+          "Puffer Electro",
+          "Woodpecker Electro"
+        ]
       },
       {
         "Name": "Woodpecker Electro",
-        "Rating": "95.22%"
+        "Rating": "95.22%",
+        "TwoPieceOptions": [
+          "Polar Metal",
+          "Astral Voice, Hormone Punk",
+          "Puffer Electro",
+          "Branch & Blade Song"
+        ]
       },
       {
         "Name": "Polar Metal",
-        "Rating": "93.49%"
+        "Rating": "93.49%",
+        "TwoPieceOptions": [
+          "Woodpecker Electro",
+          "Astral Voice, Hormone Punk",
+          "Branch & Blade Song",
+          "Puffer Electro"
+        ]
       }
     ],
     "MainStats": [

@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmzr009zoack164an8ct",
     "Name": "Pyrois",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "17/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -22,11 +22,21 @@
     "BestDiskSets": [
       {
         "Name": "The Sky Ablaze",
-        "Rating": "100.00%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Puffer Electro",
+          "Branch & Blade Song",
+          "Chaotic Metal, Shining Aria",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "98.39%"
+        "Rating": "98.39%",
+        "TwoPieceOptions": [
+          "Branch & Blade Song",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [

@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmyq009loackdzo5vb1d",
     "Name": "Nangong Yu",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "23/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,11 +30,19 @@
     "BestDiskSets": [
       {
         "Name": "Phaethon's Melody",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Freedom Blues, Chaos Jazz",
+          "Shining Aria, Chaotic Metal",
+          "Astral Voice, Hormone Punk"
+        ]
       },
       {
         "Name": "Freedom Blues",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Phaethon's Melody"
+        ]
       }
     ],
     "MainStats": [

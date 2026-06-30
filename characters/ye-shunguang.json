@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmx70095oackjljo9l52",
     "Name": "Ye Shunguang",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "17/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,7 +30,14 @@
     "BestDiskSets": [
       {
         "Name": "White Water Ballad",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Branch & Blade Song",
+          "Puffer Electro",
+          "Astral Voice, Hormone Punk",
+          "Fanged Metal",
+          "Woodpecker Electro"
+        ]
       }
     ],
     "MainStats": [

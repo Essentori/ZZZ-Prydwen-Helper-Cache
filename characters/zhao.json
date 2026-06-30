@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmxy009doack7gustwf4",
     "Name": "Zhao",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -22,11 +22,19 @@
     "BestDiskSets": [
       {
         "Name": "Bunny in Wonderland",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Yunkui Tales",
+          "Moonlight Lullaby, Swing Jazz"
+        ]
       },
       {
         "Name": "Astral Voice",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Moonlight Lullaby, Swing Jazz",
+          "Yunkui Tales"
+        ]
       }
     ],
     "MainStats": [

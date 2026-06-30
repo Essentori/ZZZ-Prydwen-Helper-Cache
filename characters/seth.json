@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmw9008toack31wrbnm7",
     "Name": "Seth",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,19 +26,37 @@
     "BestDiskSets": [
       {
         "Name": "Astral Voice",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz",
+          "Freedom Blues, Chaos Jazz"
+        ]
       },
       {
         "Name": "Swing Jazz",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Hormone Punk, Proto Punk",
+          "Shockstar Disco"
+        ]
       },
       {
         "Name": "Proto Punk",
-        "Rating": "3%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz",
+          "Hormone Punk",
+          "Shockstar Disco"
+        ]
       },
       {
         "Name": "Freedom Blues",
-        "Rating": "4%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Swing Jazz",
+          "Hormone Punk",
+          "Shockstar Disco"
+        ]
       }
     ],
     "MainStats": [

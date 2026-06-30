@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmu10081oacksihz2ee3",
     "Name": "Lucia",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -26,7 +26,10 @@
     "BestDiskSets": [
       {
         "Name": "Moonlight Lullaby",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Yunkui Tales"
+        ]
       }
     ],
     "MainStats": [

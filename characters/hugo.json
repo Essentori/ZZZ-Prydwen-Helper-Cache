@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmt7007roacka36nis4v",
     "Name": "Hugo",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,11 +30,24 @@
     "BestDiskSets": [
       {
         "Name": "Hormone Punk",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Polar Metal",
+          "Woodpecker Electro",
+          "Puffer Electro",
+          "Astral Voice",
+          "Branch & Blade Song"
+        ]
       },
       {
         "Name": "Puffer Electro",
-        "Rating": "2%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Polar Metal",
+          "Woodpecker Electro",
+          "Hormone Punk, Astral Voice",
+          "Branch & Blade Song"
+        ]
       }
     ],
     "MainStats": [

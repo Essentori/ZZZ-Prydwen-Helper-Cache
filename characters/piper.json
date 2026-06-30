@@ -2,7 +2,7 @@
   "Meta": {
     "Id": "cmoxppmvg008joackegjxiphh",
     "Name": "Piper",
-    "LastUpdated": "30/June/2026"
+    "LastUpdated": "14/June/2026"
   },
   "Build": {
     "BestWEngines": [
@@ -30,7 +30,13 @@
     "BestDiskSets": [
       {
         "Name": "Fanged Metal",
-        "Rating": "1%"
+        "Rating": "100.00%",
+        "TwoPieceOptions": [
+          "Phaethon's Melody",
+          "Puffer Electro",
+          "Chaos Jazz, Freedom Blues",
+          "Astral Voice, Hormone Punk"
+        ]
       }
     ],
     "MainStats": [
